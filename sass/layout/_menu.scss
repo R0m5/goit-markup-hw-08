@@ -1,0 +1,42 @@
+.menu-button {
+  //   min-height: 40px;
+  //   min-width: 40px;
+  display: inline-flex;
+  //   align-items: center;
+  //   justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  //   cursor: pointer;
+  border: none;
+  //   border-radius: 50%;
+  //   outline: none;
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+.menu-button.is-open .icon-cross {
+  display: block;
+}
+.menu-button.is-open .icon-burger {
+  display: none;
+}
+
+.menu-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: aqua;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+
+  height: 200px;
+
+  &.is-open {
+    display: none;
+  }
+}
