@@ -1,14 +1,14 @@
 .portfolio {
   @extend %section;
 }
-.menu {
+.btn-list {
   @extend %list;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 50px;
   justify-content: center;
 }
-.menu__item:not(:nth-child(5n)) {
+.btn-list__item:not(:nth-child(5n)) {
   margin-right: 8px;
 }
 .portfolio-photos {

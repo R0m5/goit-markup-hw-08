@@ -6,28 +6,57 @@
 }
 .people__list {
   @extend %list;
-  background: var(--background-color3);
-  display: flex;
-  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    flex-wrap: nowrap;
+  }
 }
 .people__list .people__item {
-  width: 270px;
+  display: block;
   background-color: var(--accent-color);
   box-shadow: var(--box-shadow-people);
   border-radius: var(--border-radius-people);
-  margin-right: 30px;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
-.people__list .people__item:last-child {
-  margin-right: 0px;
-}
+
 .people__title-teams {
   color: var(--primary-text-color);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
+
 .item-list__paragraph {
   color: var(--secondary-text-color);
   font-weight: 400;

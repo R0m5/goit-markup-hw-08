@@ -32,7 +32,7 @@
   }
 }
 /* MENU BUTTON */
-.menu__button {
+.portfolio__button {
   color: var(--primary-text-color);
   background: var(--background-color3);
   font-weight: 500;
@@ -102,7 +102,7 @@
   letter-spacing: 0.06em;
   font-family: inherit;
   transition: background-color 250ms var(--timing-function);
-  margin-left: 10px;
+  margin-left: 12px;
   display: inline-flex;
   align-items: center;
   text-align: center;
