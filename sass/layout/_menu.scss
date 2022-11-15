@@ -12,31 +12,48 @@
   border: none;
   //   border-radius: 50%;
   //   outline: none;
-}
+  @media (min-width: 768px) {
+    .menu {
+      display: none;
+    }
+  }
 
-.menu-button .icon-cross {
-  display: none;
-}
-.menu-button.is-open .icon-cross {
-  display: block;
-}
-.menu-button.is-open .icon-burger {
-  display: none;
-}
-
-.menu-container {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: aqua;
-  padding: 20px;
-  font-size: 20px;
-  text-align: center;
-
-  height: 200px;
-
-  &.is-open {
+  .menu-button .icon-cross {
     display: none;
   }
+  .menu-button.is-open .icon-cross {
+    display: block;
+  }
+  .menu-button.is-open .icon-burger {
+    display: none;
+  }
+
+  .menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: aqua;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+
+    height: 200px;
+
+    &.is-open {
+      display: none;
+    }
+  }
+}
+
+.menu-navigation,
+.menu-contacts {
+  height: 40px;
+  width: 50px;
+}
+.menu-contacts {
+  outline: 1px red solid;
+}
+.menu-navigation {
+  outline: 1px teal solid;
 }

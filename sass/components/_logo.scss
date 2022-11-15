@@ -5,6 +5,11 @@
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 .page-header__logotype {
   color: var(--navigation-color);
@@ -19,6 +24,11 @@
   text-decoration: none;
   display: inline-block;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1200px) {
+    font-size: 24px;
+    line-height: 1.16;
+  }
 }
 .footer__logotype {
   color: var(--navigation-color);

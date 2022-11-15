@@ -30,7 +30,12 @@
   &:focus {
     background-color: var(--hover-navigation-color);
   }
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding: 10px 24px;
+  }
 }
+
 /* MENU BUTTON */
 .portfolio__button {
   color: var(--primary-text-color);
@@ -112,10 +117,20 @@
   &:focus {
     background-color: var(--hover-navigation-color);
   }
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 31px;
+    padding-right: 28px;
+  }
 }
 .subscribe-footer__icon {
   fill: var(--accent-color);
   align-items: center;
   justify-content: center;
   margin-left: 10px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-left: 12px;
+  }
 }
