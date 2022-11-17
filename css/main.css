@@ -93,6 +93,12 @@ img {
   padding-bottom: 94px;
   padding-top: 94px;
 }
+@media screen and (max-width: 1200px) {
+  .portfolio, .clients, .people, .features, .hero-overlay {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .features__title {
   font-weight: 700;
