@@ -182,7 +182,10 @@ textarea::placeholder {
 .check-form {
   margin-top: 20px;
   margin-bottom: 30px;
-  padding-left: 14px;
+
+  @media screen and (min-width: 1200px) {
+    padding-left: 14px;
+  }
 }
 .check-form__label {
   display: flex;
