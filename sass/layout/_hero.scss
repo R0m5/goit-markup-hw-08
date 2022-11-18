@@ -1,26 +1,79 @@
 .hero {
   background-color: var(--background-color);
   color: var(--primary-text-color);
-  padding-bottom: 200px;
-  padding-top: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 .hero-overlay {
   @extend %section;
-
-  max-width: 1600px;
+  // height: 600px;
+  // max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  height: 600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/img.background.jpg");
+    url("../images/images.index/hero/header-tel\ img\ \(1\).jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-overlay {
+    background-image: url("../images/images.index/hero/header-tel\ img\ \(2\).jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/images.index/hero/header-plan\ img\ \(1\).jpg");
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: url("../images/images.index/hero/header-plan\ img\ \(2\).jpg");
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-overlay {
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/images.index/hero/headerdesktop@2x\ \(1\).jpg");
+    max-width: 1600px;
+    min-height: 600px;
+  }
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-overlay {
+      background-image: url("../images/images.index/hero/headerdesktop@2x\ \(2\).jpg");
+    }
+  }
+}
+
 .hero__title {
   color: var(--accent-color);
   font-weight: 900;
