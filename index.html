@@ -49,7 +49,7 @@
           </li>
         </ul>
 
-        <button type="button" class="menu-toggle js-open-menu"
+        <!-- <button type="button" class="menu-toggle js-open-menu"
         aria-expanded="false" aria-controls="menu-container">
           <svg class="" width="40" height="40"
           aria-label="Перемикач мобільного меню">
@@ -60,7 +60,7 @@
         </div>
 
         <div class="menu-navigation"></div>
-        <div class="menu-contacts"></div>
+        <div class="menu-contacts"></div> -->
 
       <!-- <div class="menu-container js-menu-container" id="mobile-menu">
         <button class="menu-toggle js-close-menu">
@@ -245,34 +245,48 @@
           <h2 class="no-padding__title">Чим ми займаємося</h2>
           <ul class="no-padding__devices">
             <li class="no-padding__item">
+
+              <picture>
+              <source
+                srcset="./images/images.index/devices/box1.jpg 1x, ./images/images.index/devices/box1x2.jpg 2x" type="image/jpeg"/>
               <img
-                srcset="./images/images.index/box1.jpg 1x, ./images/images.index/box1x2.jpg 2x,"
-                src="./images/images.index/box1.jpg"
+                src="./images/images.index/devices/box1.jpg"
                 alt="Робота за комп'ютером"
                 width="370"
                 height="294" />
+                </picture>
+
               <div class="devices-overlay">
                 <p class="devices-overlay__applications">Десктопні додатки</p>
               </div>
             </li>
             <li class="no-padding__item">
+
+              <picture>
+              <source
+                srcset="./images/images.index/devices/box2.jpg 1x, ./images/images.index/devices/box2x2.jpg 2x" type="image/jpeg"/>
               <img
-              srcset="./images/images.index/box2.jpg 1x, ./images/images.index/box2x2.jpg 2x,"
                 src="./images/images.index/box2.jpg"
                 alt="Робота за телефоном"
                 width="370"
                 height="294" />
+                </picture>
+
               <div class="devices-overlay">
                 <p class="devices-overlay__applications">Мобільні додатки</p>
               </div>
             </li>
             <li class="no-padding__item">
+
+              <picture>
+               <source srcset="./images/images.index/devices/box3.jpg 1x, ./images/images.index/devices/box3x2.jpg 2x" type="image/jpeg"/>
               <img
-              srcset="./images/images.index/box3.jpg 1x, ./images/images.index/box3x2.jpg 2x,"
                 src="./images/images.index/box3.jpg"
                 alt="Робота за планшетом"
                 width="370"
                 height="294" />
+                </picture>
+
               <div class="devices-overlay">
                 <p class="devices-overlay__applications">Дизайнерські рішення</p>
               </div>
@@ -287,12 +301,19 @@
           <h2 class="people__title-teams">Наша команда</h2>
           <ul class="people__list">
             <li class="people__item">
+
+              <picture>
+              <source
+                srcset="./images/images.index/team/igor-tel.jpg 1x, ./images/images.index/team/igor-tel2x@2x.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+              <source srcset="./images/images.index/team/igor-desk1.jpg 1x, ./images/images.index/team/igor-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+              <source
+                srcset="./images/images.index/team/igor-tab1.jpg 1x, ./images/images.index/team/igor-tab2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
               <img
-              srcset=""
-                src="./images/img3.jpg"
+                src="./images/images.index/team/igor-tab1.jpg"
                 alt="Чоловік"
-                width="270"
-                height="260" />
+                width="450"/>
+              </picture>
+
               <div class="item-list">
                 <h3 class="item-list__title">Ігор Дем'яненко</h3>
                 <p class="item-list__paragraph">Product Designer</p>
@@ -349,11 +370,19 @@
               </div>
             </li>
             <li class="people__item">
+
+              <picture>
+              <source
+                srcset="./images/images.index/team/olga-tel1.jpg 1x, ./images/images.index/team/olga-tel2.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+              <source srcset="./images/images.index/team/olga-desk1.jpg 1x, ./images/images.index/team/olga-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+              <source
+                srcset="./images/images.index/team/olga-tablet1.jpg 1x, ./images/images.index/team/olga-tablet2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
               <img
-                src="./images/img4.jpg"
+                src="./images/images.index/team/olga-tablet2.jpg"
                 alt="Жінка"
-                width="270"
-                height="260" />
+                 /> 
+              </picture>  
+
               <div class="item-list">
                 <h3 class="item-list__title">Ольга Рєпіна</h3>
                 <p class="item-list__paragraph">Frontend Developer</p>
@@ -410,11 +439,16 @@
               </div>
             </li>
             <li class="people__item">
+              <picture>
+              <source
+                srcset="./images/images.index/team/mykola-tel1.jpg 1x, ./images/images.index/team/mykola-tel2.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+              <source srcset="./images/images.index/team/mykola-desk1.jpg 1x, ./images/images.index/team/mykola-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+              <source
+                srcset="./images/images.index/team/mykola-tablet1.jpg 1x, ./images/images.index/team/mykola-tablet2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
               <img
-                src="./images/img5.jpg"
-                alt="Чоловік"
-                width="270"
-                height="260" />
+                src="./images/images.index/team/mykola-tablet1.jpg"
+                alt="Чоловік"  />
+              </picture>             
               <div class="item-list">
                 <h3 class="item-list__title">Микола Тарасов</h3>
                 <p class="item-list__paragraph">Marketing</p>
@@ -471,11 +505,17 @@
               </div>
             </li>
             <li class="people__item">
+              <picture>
+              <source
+                srcset="./images/images.index/team/misha-tel1.jpg 1x, ./images/images.index/team/misha-tel2.jpg 2x" media="(max-width: 767px )" type="image/jpeg"/>
+              <source srcset="./images/images.index/team/misha-desk1.jpg 1x, ./images/images.index/team/misha-desk2.jpg 2x" media="(min-width: 1200px )" type="image/jpeg"/>
+              <source
+                srcset="./images/images.index/team/misha-tablet1.jpg 1x, ./images/images.index/team/misha-tablet2.jpg 2x" media="(min-width: 768px )" type="image/jpeg"/>
               <img
-                src="./images/img6.jpg"
+                src="./images/images.index/team/misha-tablet1.jpg"
                 alt="Чоловік"
-                width="270"
-                height="260" />
+                 /> 
+              </picture>  
               <div class="item-list">
                 <h3 class="item-list__title">Михайло Єрмаков</h3>
                 <p class="item-list__paragraph">UI Designer</p>
