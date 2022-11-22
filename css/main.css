@@ -1070,15 +1070,16 @@ textarea::placeholder {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  max-width: 696px;
+  margin: 0 auto;
   margin-top: 0;
   margin-bottom: 30px;
-  max-width: 696px;
-  margin: 0 auto 30px;
 }
 @media screen and (max-width: 1199px) {
   .hero__title {
     font-size: 26px;
     line-height: 1.62;
+    max-width: 360px;
   }
 }
 
