@@ -14,6 +14,7 @@
 .page-header__main-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .navigation__site {
   @extend %list;
