@@ -702,7 +702,6 @@ img {
   left: 50%;
   min-height: 609px;
   max-width: 450px;
-  width: 100%;
   padding: 40px;
   background-color: white;
   -webkit-transform: translate(-50%, -50%);
@@ -714,9 +713,7 @@ img {
 }
 @media screen and (max-width: 767px) {
   .modal {
-    height: 95%;
     width: 95%;
-    overflow: scroll;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -749,7 +746,7 @@ img {
   transition: fill 250ms var(--timing-function);
 }
 .modal__close-button:hover, .modal__close-button:focus {
-  color: var(--accent-color);
+  fill: var(--hover-navigation-color);
 }
 
 .modal__text {
